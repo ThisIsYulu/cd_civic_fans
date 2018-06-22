@@ -12,6 +12,7 @@ import java.util.List;
 /**
  * Created by Yulu on 2017/9/7.
  */
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -30,6 +31,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> getAllUser(User user) {
+        // 只有紧跟在 PageHelper.startPage 方法后的第一个 MyBatis 的查询(select)方法会被分页。
         PageHelper.startPage(user.getPageNum(), user.getPageSize());
         return userDao.selectAll();
     }
