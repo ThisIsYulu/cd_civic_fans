@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cd_civic_fans" />
         <module name="spring_boot_demo" />
-        <module name="springboot_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cd_civic_fans" target="1.8" />
       <module name="spring_boot_demo" target="1.8" />
-      <module name="springboot_demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
